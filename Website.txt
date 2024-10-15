@@ -1,4 +1,90 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persönliche Vorstellung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        .bio {
+            margin-bottom: 20px;
+        }
+        .bio p {
+            margin: 0 0 10px;
+            line-height: 1.6;
+        }
+        .profile-img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        .details {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .details div {
+            width: 45%;
+            margin: 10px 0;
+        }
+        .details h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2980b9;
+        }
+    </style>
+</head>
 <body>
-
-<h1>Überschrift 1 </h1>
+    <div class="container">
+        <div class="header">
+            <img src="profilbild.jpg" alt="Profilbild" class="profile-img">
+            <h1>Max Mustermann</h1>
+        </div>
+        <div class="bio">
+            <h2>Über mich</h2>
+            <p>Ich bin Max Mustermann, ein leidenschaftlicher Softwareentwickler mit über 10 Jahren Erfahrung in der IT-Branche. Meine Spezialgebiete sind Webentwicklung, Datenbanken und Cloud-Lösungen.</p>
+        </div>
+        <div class="details">
+            <div>
+                <h2>Fähigkeiten</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Kontakt</h2>
+                <p>Email: max.mustermann@example.com</p>
+                <p>Telefon: 01234 567890</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
