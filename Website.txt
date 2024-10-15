@@ -1,91 +1,89 @@
-<html>
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persönliche Vorstellung</title>
+    <title>Über mich</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #333;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main {
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            margin-top: 20px;
         }
-        .header {
+        footer {
+            background: #333;
+            color: #fff;
             text-align: center;
-            padding: 20px 0;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #2c3e50;
-        }
-        .bio {
-            margin-bottom: 20px;
-        }
-        .bio p {
-            margin: 0 0 10px;
-            line-height: 1.6;
-        }
-        .profile-img {
-            width: 100%;
-            max-width: 200px;
-            border-radius: 50%;
-            margin: 0 auto;
-            display: block;
-        }
-        .details {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .details div {
-            width: 45%;
-            margin: 10px 0;
-        }
-        .details h2 {
-            text-align: center;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #2980b9;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="profilbild.jpg" alt="Profilbild" class="profile-img">
-            <h1>Max Mustermann</h1>
-        </div>
-        <div class="bio">
-            <h2>Über mich</h2>
-            <p>Ich bin Max Mustermann, ein leidenschaftlicher Softwareentwickler mit über 10 Jahren Erfahrung in der IT-Branche. Meine Spezialgebiete sind Webentwicklung, Datenbanken und Cloud-Lösungen.</p>
-        </div>
-        <div class="details">
-            <div>
-                <h2>Fähigkeiten</h2>
+    <header>
+        <div class="container">
+            <h1>Über mich</h1>
+            <nav>
                 <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Java</li>
+                    <li><a href="#about">Über mich</a></li>
+                    <li><a href="#skills">Fähigkeiten</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
-            </div>
-            <div>
-                <h2>Kontakt</h2>
-                <p>Email: max.mustermann@example.com</p>
-                <p>Telefon: 01234 567890</p>
-            </div>
+            </nav>
         </div>
+    </header>
+    <div class="container">
+        <section id="about" class="main">
+            <h2>Über mich</h2>
+            <p>Hallo! Mein Name ist [Dein Name]. Ich bin [Dein Beruf] aus [Dein Wohnort]. Ich habe eine Leidenschaft für [Deine Leidenschaft/Hobby].</p>
+        </section>
+        <section id="skills" class="main">
+            <h2>Fähigkeiten</h2>
+            <ul>
+                <li>Fähigkeit 1</li>
+                <li>Fähigkeit 2</li>
+                <li>Fähigkeit 3</li>
+            </ul>
+        </section>
+        <section id="contact" class="main">
+            <h2>Kontakt</h2>
+            <p>Du kannst mich erreichen unter: <a href="mailto:deine.email@example.com">deine.email@example.com</a></p>
+        </section>
     </div>
+    <footer>
+        <p>© 2024 [Dein Name]. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
