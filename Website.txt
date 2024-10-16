@@ -67,7 +67,8 @@
     <div class="container">
         <section id="about" class="main">
             <h2>Über mich</h2>
-            <p>Hallo! Mein Name ist [Dein Name]. Ich bin [Dein Beruf] aus [Dein Wohnort]. Ich habe eine Leidenschaft für [Deine Leidenschaft/Hobby].</p>
+            <p>Hallo! Mein Name ist [Dein Name]. Ich bin [Dein Beruf] aus [Dein Wohnort]. Ich habe eine Leidenschaft für [Deine Leidenschaft/Hobby].
+            Mein Name ist Nils</p>
         </section>
         <section id="skills" class="main">
             <h2>Fähigkeiten</h2>
@@ -79,11 +80,14 @@
         </section>
         <section id="contact" class="main">
             <h2>Kontakt</h2>
-            <p>Du kannst mich erreichen unter: <a href="mailto:deine.email@example.com">deine.email@example.com</a></p>
+            <p>Dienstlich zu erreichen unter:<br>
+                <a href="mailto:nils.kubousek@porsche.de">nils.kubousek@porsche.de</a> <br>
+                +49 162 9936387 
+            </p>
         </section>
     </div>
     <footer>
-        <p>© 2024 [Dein Name]. Alle Rechte vorbehalten.</p>
+        <p>© 2024 Nils Kubousek. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
