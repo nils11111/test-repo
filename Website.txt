@@ -108,7 +108,7 @@
     <div class="container">
         <section id="about" class="section fade-in">
             <h2>Über mich</h2>
-            <img src="dein-bild.jpg" alt="Bild von mir">
+            <img src="C:\Users\VYZHKAN\Documents\bilder/Basketball.png" alt="Bild von Basketball">
             <p>Hallo! Mein Name ist [Dein Name]. Ich bin [Dein Beruf] aus [Dein Wohnort]. Ich habe eine Leidenschaft für [Deine Leidenschaft/Hobby].</p>
             <p>Ich liebe es, neue Dinge zu lernen und mich ständig weiterzuentwickeln. In meiner Freizeit genieße ich [Deine Freizeitaktivitäten].</p>
         </section>

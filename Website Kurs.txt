@@ -6,7 +6,7 @@
     <title>Meine Selbstvorstellung</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'porsche next tt', porsche next tt;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -77,7 +77,7 @@
         .gallery img:hover {
             transform: scale(1.05);
         }
-       
+        
         .fade-in {
             animation: fadeIn 2s;
         }
@@ -85,13 +85,7 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        .chart-container {
-            position: relative;
-            height: 400px;
-            width: 100%;
-        }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         async function fetchStockPrice() {
             const apiKey = 'IPSXJLKBWQQXDU3U';
@@ -105,51 +99,12 @@
             document.getElementById('stock-change').innerText = changePercent;
         }
 
-        async function fetchStockChart() {
-            const apiKey = 'IPSXJLKBWQQXDU3UL';
-            const symbol = 'P911.DE';
-            const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&apikey=${apiKey}`;
-            const response = await fetch(url);
-            const data = await response.json();
-            const timeSeries = data['Time Series (Daily)'];
-            const labels = Object.keys(timeSeries).reverse();
-            const prices = labels.map(date => timeSeries[date]['4. close']);
-
-            const ctx = document.getElementById('stock-chart').getContext('2d');
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Porsche Aktienkurs',
-                        data: prices,
-                        borderColor: 'rgba(75, 192, 192, 1)',
-                        borderWidth: 1,
-                        fill: false
-                    }]
-                },
-                options: {
-                    scales: {
-                        x: {
-                            type: 'time',
-                            time: {
-                                unit: 'day'
-                            }
-                        }
-                    }
-                }
-            });
-        }
-
-        window.onload = () => {
-            fetchStockPrice();
-            fetchStockChart();
-        };
+        window.onload = fetchStockPrice;
     </script>
 </head>
 <body>
     <header>
-        <h1>Willkommen auf meiner Seite!</h1>
+        <h1>Nils Kubousek</h1>
     </header>
     <nav>
         <a href="#about">Über mich</a>
@@ -162,15 +117,22 @@
         <section id="about" class="section fade-in">
             <h2>Über mich</h2>
             <img src="dein-bild.jpg" alt="Bild von mir">
-            <p>Hallo! Mein Name ist [Dein Name]. Ich bin [Dein Beruf] aus [Dein Wohnort]. Ich habe eine Leidenschaft für [Deine Leidenschaft/Hobby].</p>
+            <p>Hallo! Ich bin Nils, dualer Student bei Porsche Leipzig im Bereich Informatik mit Schwerpunkt auf Künstlicher Intelligenz. Im August bin ich von Bremen nach Sachsen gezogen ür den Start im Unternehmen. Ab und zu fahre ich noch zurück in die Heimat, um die Familie und Freunde zu besuchen.-</p>
             <p>Ich liebe es, neue Dinge zu lernen und mich ständig weiterzuentwickeln. In meiner Freizeit genieße ich [Deine Freizeitaktivitäten].</p>
         </section>
         <section id="goals" class="section fade-in">
             <h2>Ziele</h2>
             <ul>
-                <li>Berufliches Ziel 1</li>
-                <li>Persönliches Ziel 2</li>
-                <li>Langfristiges Ziel 3</li>
+            <p><strong><u>Berufliche Ziele für die nächsten 5 jahre</u></strong>
+                <li>Abschluss Bachelor of Science mit 1,x</li>
+                <li>Übernahme bei Porsche Leipzig</li>
+                <li>Beginn Masterstudium Wirtschaftsinformatik oder Business Administration</li>
+            </p>
+            <p><strong><u>Berufliche Ziele für die nächsten 10 jahre</u></strong>
+                <li>Masterstudium abschließen mit 1,x</li>
+                <li>Einblicke in der Entwicklung in Weissach sammeln</li>
+                <li>KI großflächig zur Unterstützung in der Produktion einsetzen </li>
+            </p>
             </ul>
         </section>
         <section id="gallery" class="section fade-in">
@@ -182,16 +144,16 @@
             </div>
         </section>
         <section id="stock" class="section fade-in">
-            <h2>Porsche Aktienkurs</h2>
+            <h2>Porsche Aktienkurs (Funfact)</h2>
             <p>Aktueller Kurs: <strong id="stock-price">Laden...</strong></p>
             <p>Änderung: <span id="stock-change">Laden...</span></p>
-            <div class="chart-container">
-                <canvas id="stock-chart"></canvas>
-            </div>
+            <p>Stand: <span id="stock-date">16. Oktober 2024</span></p>
         </section>
         <section id="contact" class="section fade-in">
             <h2>Kontakt</h2>
-            <p>Du kannst mich erreichen unter: <a href="mailto:deine.email@example.com">deine.email@example.com</a></p>
+            <p>Dienstlich zu erreichen unter:</p>
+            <p><a href="nils.kubousek@porsche.de">nils.kubousek@porsche.de</a></p>
+            <p>0162 9936387
         </section>
     </div>
     
