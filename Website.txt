@@ -115,15 +115,15 @@
         <section id="goals" class="section fade-in">
             <h2>Ziele</h2>
             <ul>
-            <p>Meine Ziele für die nächsten 5 jahre
+            <p>Berufliche Ziele für die nächsten 5 jahre
                 <li>Abschluss Bachelor of Science mit 1,x</li>
                 <li>Übernahme bei Porsche Leipzig</li>
                 <li>Beginn Masterstudium Wirtschaftsinformatik oder Business Administration</li>
             </p>
-            <p>Meine Ziele für die nächsten 5 jahre
-                <li>Abschluss Bachelor of Science mit 1,x</li>
-                <li>Übernahme bei Porsche Leipzig</li>
-                <li>Beginn Masterstudium Wirtschaftsinformatik oder Business Administration</li>
+            <p>Berufliche Ziele für die nächsten 5 jahre
+                <li>Masterstudium abschließen mit 1,x</li>
+                <li>Einblicke in die Entwicklung in Weissach sammeln</li>
+                <li></li>
             </p>
 
             </ul>
@@ -143,6 +143,39 @@
             <p>0162 9936387 
         </section>
     </div>
+
+    meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Selbstvorstellung</title>
+    <style>
+        /* Dein CSS-Stil hier */
+    </style>
+    <script>
+        async function fetchStockPrice() {
+            const apiKey = 'IPSXJLKBWQQXDU3U';
+            const symbol = 'P911.DE';
+            const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
+            const response = await fetch(url);
+            const data = await response.json();
+            const stockPrice = data['Global Quote']['05. price'];
+            const changePercent = data['Global Quote']['10. change percent'];
+            document.getElementById('stock-price').innerText = `€${stockPrice}`;
+            document.getElementById('stock-change').innerText = changePercent;
+        }
+
+        window.onload = fetchStockPrice;
+    </script>
+</head>
+<body>
+    <!-- Dein HTML-Code hier -->
+    <section id="stock" class="section fade-in">
+        <h2>Porsche Aktienkurs</h2>
+        <p>Aktueller Kurs: <strong id="stock-price">Laden...</strong></p>
+        <p>Änderung: <span id="stock-change">Laden...</span></p>
+        <p>Stand: <span id="stock-date">16. Oktober 2024</span></p>
+    </section>
+    <!-- Dein HTML-Code hier -->
+
     <footer>
         <p>© 2024 Nils Kubousek. Alle Rechte vorbehalten.</p>
     </footer>
