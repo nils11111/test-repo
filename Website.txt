@@ -22,6 +22,16 @@
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            max-width: 50px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        header h1 {
+            margin: 0;
         }
         header a {
             color: #fff;
@@ -32,6 +42,7 @@
         header ul {
             padding: 0;
             list-style: none;
+            margin-left: auto;
         }
         header li {
             display: inline;
@@ -41,13 +52,6 @@
             padding: 20px;
             background: #fff;
             margin-top: 20px;
-            display: flex;
-            align-items: center;
-        }
-        .main img {
-            max-width: 150px;
-            margin-right: 20px;
-            border-radius: 50%;
         }
         footer {
             background: #333;
@@ -61,6 +65,7 @@
 <body>
     <header>
         <div class="container">
+            <img src="dein-bild.jpg" alt="Bild von mir">
             <h1>Über mich</h1>
             <nav>
                 <ul>
@@ -73,11 +78,8 @@
     </header>
     <div class="container">
         <section id="about" class="main">
-            <img src="dein-bild.jpg" alt="Bild von mir">
-            <div>
-                <h2>Über mich</h2>
-                <p>Hallo! Mein Name ist [Dein Name]. Ich bin [Dein Beruf] aus [Dein Wohnort]. Ich habe eine Leidenschaft für [Deine Leidenschaft/Hobby].</p>
-            </div>
+            <h2>Über mich</h2>
+            <p>Hallo! Mein Name ist [Dein Name]. Ich bin [Dein Beruf] aus [Dein Wohnort]. Ich habe eine Leidenschaft für [Deine Leidenschaft/Hobby].</p>
         </section>
         <section id="skills" class="main">
             <h2>Fähigkeiten</h2>
@@ -93,7 +95,7 @@
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 [Dein Name]. Alle Rechte vorbehalten.</p>
+        <p>© 2024 [Dein Name]. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
