@@ -3,93 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über mich</title>
+    <title>Meine Selbstvorstellung</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #575757;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-            display: flex;
-            align-items: center;
-        }
-        header img {
-            max-width: 50px;
-            margin-right: 20px;
-            border-radius: 50%;
-        }
-        header h1 {
-            margin: 0;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-            margin-left: auto;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .main {
+        .section {
             padding: 20px;
             background: #fff;
-            margin-top: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .about img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .goals ul {
+            list-style: none;
+            padding: 0;
+        }
+        .goals li {
+            background: #e0e0e0;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
         }
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .fade-in {
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="dein-bild.jpg" alt="Bild von mir">
-            <h1>Über mich</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Über mich</a></li>
-                    <li><a href="#skills">Fähigkeiten</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Willkommen auf meiner Seite!</h1>
     </header>
+    <nav>
+        <a href="#about">Über mich</a>
+        <a href="#goals">Ziele</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
     <div class="container">
-        <section id="about" class="main">
+        <section id="about" class="section fade-in">
             <h2>Über mich</h2>
+            <img src="dein-bild.jpg" alt="Bild von mir">
             <p>Hallo! Mein Name ist [Dein Name]. Ich bin [Dein Beruf] aus [Dein Wohnort]. Ich habe eine Leidenschaft für [Deine Leidenschaft/Hobby].</p>
+            <p>Ich liebe es, neue Dinge zu lernen und mich ständig weiterzuentwickeln. In meiner Freizeit genieße ich [Deine Freizeitaktivitäten].</p>
         </section>
-        <section id="skills" class="main">
-            <h2>Fähigkeiten</h2>
+        <section id="goals" class="section fade-in">
+            <h2>Ziele</h2>
             <ul>
-                <li>Fähigkeit 1</li>
-                <li>Fähigkeit 2</li>
-                <li>Fähigkeit 3</li>
+                <li>Berufliches Ziel 1</li>
+                <li>Persönliches Ziel 2</li>
+                <li>Langfristiges Ziel 3</li>
             </ul>
         </section>
-        <section id="contact" class="main">
+        <section id="gallery" class="section fade-in">
+            <h2>Galerie</h2>
+            <div class="gallery">
+                <img src="bild1.jpg" alt="Bild 1">
+                <img src="bild2.jpg" alt="Bild 2">
+                <img src="bild3.jpg" alt="Bild 3">
+            </div>
+        </section>
+        <section id="contact" class="section fade-in">
             <h2>Kontakt</h2>
             <p>Du kannst mich erreichen unter: <a href="mailto:deine.email@example.com">deine.email@example.com</a></p>
         </section>
