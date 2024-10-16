@@ -97,7 +97,7 @@
 </head>
 <body>
     <header>
-        <h1>Willkommen auf meiner Seite!</h1>
+        <h1>Nils Kubousek</h1>
     </header>
     <nav>
         <a href="#about">Über mich</a>
@@ -115,9 +115,17 @@
         <section id="goals" class="section fade-in">
             <h2>Ziele</h2>
             <ul>
-                <li>Berufliches Ziel 1</li>
-                <li>Persönliches Ziel 2</li>
-                <li>Langfristiges Ziel 3</li>
+            <p>Meine Ziele für die nächsten 5 jahre
+                <li>Abschluss Bachelor of Science mit 1,x</li>
+                <li>Übernahme bei Porsche Leipzig</li>
+                <li>Beginn Masterstudium Wirtschaftsinformatik oder Business Administration</li>
+            </p>
+            <p>Meine Ziele für die nächsten 5 jahre
+                <li>Abschluss Bachelor of Science mit 1,x</li>
+                <li>Übernahme bei Porsche Leipzig</li>
+                <li>Beginn Masterstudium Wirtschaftsinformatik oder Business Administration</li>
+            </p>
+
             </ul>
         </section>
         <section id="gallery" class="section fade-in">
@@ -130,11 +138,13 @@
         </section>
         <section id="contact" class="section fade-in">
             <h2>Kontakt</h2>
-            <p>Du kannst mich erreichen unter: <a href="mailto:deine.email@example.com">deine.email@example.com</a></p>
+            <p>Dienstlich zu erreichen unter:</p>
+            <p><a href="nils.kubousek@porsche.de">nils.kubousek@porsche.de</a></p>
+            <p>0162 9936387 
         </section>
     </div>
     <footer>
-        <p>© 2024 [Dein Name]. Alle Rechte vorbehalten.</p>
+        <p>© 2024 Nils Kubousek. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
