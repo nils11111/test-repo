@@ -6,35 +6,39 @@
     <title>Meine Selbstvorstellung</title>
     <style>
         body {
-            font-family: 'porsche next tt', porsche next tt;
+            font-family: 'Porsche Next TT', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background: linear-gradient(90deg, #4b6cb7, #182848);
             color: #fff;
-            padding: 20px 0;
+            padding: 25px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 4.5em;
+            letter-spacing: 2px;
         }
         nav {
             display: flex;
             justify-content: center;
             background: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: #fff;
             padding: 15px 20px;
             text-decoration: none;
             text-transform: uppercase;
-            transition: background 0.3s;
+            transition: background 0.3s, color 0.3s;
         }
         nav a:hover {
             background: #575757;
+            color: #ffcc00;
         }
         .container {
             width: 80%;
@@ -47,9 +51,14 @@
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-5px);
         }
         .section h2 {
             margin-top: 0;
+            color: #4b6cb7;
         }
         .about img {
             float: left;
@@ -57,6 +66,7 @@
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .goals ul {
             list-style: none;
@@ -67,17 +77,30 @@
             margin: 10px 0;
             padding: 10px;
             border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .goals li:hover {
+            background: #d4d4d4;
         }
         .gallery img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .gallery img:hover {
             transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
-        
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
         .fade-in {
             animation: fadeIn 2s;
         }
@@ -117,22 +140,20 @@
         <section id="about" class="section fade-in">
             <h2>Über mich</h2>
             <img src="dein-bild.jpg" alt="Bild von mir">
-            <p>Hallo! Ich bin Nils, dualer Student bei Porsche Leipzig im Bereich Informatik mit Schwerpunkt auf Künstlicher Intelligenz. Im August bin ich von Bremen nach Sachsen gezogen ür den Start im Unternehmen. Ab und zu fahre ich noch zurück in die Heimat, um die Familie und Freunde zu besuchen.-</p>
+            <p>Hallo! Ich bin Nils, dualer Student bei Porsche Leipzig im Bereich Informatik mit Schwerpunkt auf Künstlicher Intelligenz. Im August bin ich von Bremen nach Sachsen gezogen für den Start im Unternehmen. Ab und zu fahre ich noch zurück in die Heimat, um die Familie und Freunde zu besuchen.</p>
             <p>Ich liebe es, neue Dinge zu lernen und mich ständig weiterzuentwickeln. In meiner Freizeit genieße ich [Deine Freizeitaktivitäten].</p>
         </section>
         <section id="goals" class="section fade-in">
             <h2>Ziele</h2>
             <ul>
-            <p><strong><u>Berufliche Ziele für die nächsten 5 jahre</u></strong>
+                <p><strong><u>Berufliche Ziele für die nächsten 5 Jahre</u></strong></p>
                 <li>Abschluss Bachelor of Science mit 1,x</li>
                 <li>Übernahme bei Porsche Leipzig</li>
                 <li>Beginn Masterstudium Wirtschaftsinformatik oder Business Administration</li>
-            </p>
-            <p><strong><u>Berufliche Ziele für die nächsten 10 jahre</u></strong>
+                <p><strong><u>Berufliche Ziele für die nächsten 10 Jahre</u></strong></p>
                 <li>Masterstudium abschließen mit 1,x</li>
                 <li>Einblicke in der Entwicklung in Weissach sammeln</li>
-                <li>KI großflächig zur Unterstützung in der Produktion einsetzen </li>
-            </p>
+                <li>KI großflächig zur Unterstützung in der Produktion einsetzen</li>
             </ul>
         </section>
         <section id="gallery" class="section fade-in">
@@ -152,10 +173,12 @@
         <section id="contact" class="section fade-in">
             <h2>Kontakt</h2>
             <p>Dienstlich zu erreichen unter:</p>
-            <p><a href="nils.kubousek@porsche.de">nils.kubousek@porsche.de</a></p>
-            <p>0162 9936387
+            <p><a href="mailto:nils.kubousek@porsche.de">nils.kubousek@porsche.de</a></p>
+            <p>0162 9936387</p>
         </section>
     </div>
-    
+    <footer>
+        <p>© 2024 Nils Kubousek. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
